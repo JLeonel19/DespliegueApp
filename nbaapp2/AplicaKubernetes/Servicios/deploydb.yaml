@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+spec:
+  selector:
+    matchLabels:
+      app: dbweb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dbweb
+    spec:
+      containers:
+      - name: dbwebcontenedor
+        image: csrleonel/db
+        ports:
+        - containerPort: 3306
+
+
+        volumeMounts:
+        - name: db-volum
+          mountPath: var/lib/mysql
+        
+
+      volumes:
+      - name: db-volum
+ 
+        persistentVolumeClaim:
+          claimName: volu-claim

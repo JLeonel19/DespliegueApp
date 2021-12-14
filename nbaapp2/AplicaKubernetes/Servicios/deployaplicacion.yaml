@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aplicacion-d
+spec:
+  selector:
+    matchLabels:
+      app: apliweb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: apliweb
+    spec:
+      containers:
+      - name: aplicacion-contenedor
+        image: csrleonel/aplicacion
+        ports:
+        - containerPort: 80

@@ -1,0 +1,57 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.body{
+    background:white;
+}
+.padre{
+    background: white;
+}
+    .bienvenida{
+        text-align: center;
+        color: black;
+        background:white;
+    }
+    .header{
+        background:gray;
+    }
+    .proceso{
+        background:gray;
+    }
+.botonactualziar{
+    background: blue;
+    color: white;
+}
+.botoneliminar{
+    background:red;
+    color: white;
+}
+.titulo1{
+    text-align: center;
+}
+.nextpage1{
+    color:black;
+    text-decoration: transparent;
+
+}
+.imagen{
+    text-align: center;
+}
+
+.navegacion{
+    height: 2rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.navegacion{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.navegacion:hover{
+    background: rgb(102, 163, 102);
+}
+            
